@@ -45,7 +45,7 @@ public class ApiSample01 {
     private static final String DOUBLE_HYPHEN = "--";
 
     // 取込ファイル 設定
-    private static final String CSV_PATH = "/Users/tkanyama/Google ドライブ/Work/情報システムWG/経理課関連/顧客データ/楽楽明細テスト3.csv"; // 取込対象のファイルパスを指定
+    private static final String CSV_PATH = "C:\\Users\\toshikanyama\\Google ドライブ\\Work\\情報システムWG\\経理課関連\\顧客データ\\楽楽明細テスト3.csv"; // 取込対象のファイルパスを指定
 
     public static void main(String[] args) throws Exception {
         URL url = new URL(API_URL);
@@ -68,14 +68,14 @@ public class ApiSample01 {
             writer.append("Content-Disposition: form-data; name=\"json\"").append(CRLF);
             writer.append("Content-Type: application/json; charset=UTF-8").append(CRLF);
             writer.append(CRLF);
-            writer.append("{" + "\"reportTypeId\":10," + "\"isNewIssues\":0," + "\"importProcessName\":\"帳票データ取込サンプル\","
+            writer.append("{" + "\"reportTypeId\":10," + "\"isNewIssues\":0," + "\"importProcessName\":\"帳票データ取込サンプル4\","
                     + "\"skipFirst\":1," + "\"isImmApproval\":0," + "\"pdfIssueType\":0,"
                     + "\"inputUserComment\":\"帳票データ取込サンプル 承認コメント\"" + "}");
             writer.append(CRLF);
 
             // CSVパラメータ 設定
             writer.append(DOUBLE_HYPHEN).append(BOUNDARY).append(CRLF);
-            writer.append("Content-Disposition: form-data; name=\"files[0]\"; fileName=\"楽楽明細テスト3.csv\"").append(CRLF);
+            writer.append("Content-Disposition: form-data; name=\"files[0]\"; fileName=\"楽楽明細テスト4.csv\"").append(CRLF);
             writer.append("Content-Type: text/csv; charset=Windows-31J").append(CRLF);
             writer.append(CRLF);
             writer.flush();

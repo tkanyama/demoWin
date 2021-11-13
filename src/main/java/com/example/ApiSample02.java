@@ -45,7 +45,7 @@ public class ApiSample02 {
     private static final String DOUBLE_HYPHEN = "--";
 
     // 取込ファイル 設定
-    private static final String CSV_PATH = "/Users/tkanyama/Google ドライブ/Work/情報システムWG/経理課関連/顧客データ/顧客20211112.csv"; // 取込対象のファイルパスを指定
+    private static final String CSV_PATH = "C:\\Users\\toshikanyama\\Google ドライブ\\Work\\情報システムWG\\経理課関連\\顧客データ\\顧客20211112.csv"; // 取込対象のファイルパスを指定
 
     public static void main(String[] args) throws Exception {
         URL url = new URL(API_URL);
